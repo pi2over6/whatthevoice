@@ -1,0 +1,13 @@
+[Unit]
+Description=Discord bot for notifying people coming in and out of voice chat
+
+[Service]
+User=hspark
+Group=hspark
+Type=simple
+Restart=always
+RestartSec=5
+ExecStart=/usr/share/whatthevoice
+
+[Install]
+WantedBy=multi-user.target
